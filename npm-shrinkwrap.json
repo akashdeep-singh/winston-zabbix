@@ -1,6 +1,6 @@
 {
   "name": "winston-zabbix",
-  "version": "0.1.1",
+  "version": "0.0.1",
   "dependencies": {
     "async": {
       "version": "1.0.0",

@@ -11,13 +11,16 @@ $ npm install winston-zabbix
 
 ## Usage
 ``` js
+/*
+ * Requiring `winston`
+ */ 
 var winston = require('winston');
 
 /*
  * Requiring `winston-zabbix` will expose
- * `winston.transports.Zabbix`
+ * `winston.transports.Zabbix` for attaching as plugin to winston
  */ 
-require('./src/app').Zabbix;
+require('winston-zabbix').Zabbix;
  
 winston.add(winston.transports.Zabbix, {"host": "127.0.0.1", "level": "debug", key: "test"});
 
